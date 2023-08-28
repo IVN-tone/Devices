@@ -18,13 +18,13 @@ class AWG_ZI:
         if coupler is not None:
             self.awg_name_cpl = self.cpl.awg_name
             
-#         self.hdawgModule = hdawg.awgModule()
-#         self.hdawgModule.execute()
-#         self.hdawgModule.set('awgModule/device', self.awg_name_IQ)
+        self.hdawgModule = hdawg.awgModule()
+        self.hdawgModule.execute()
+        self.hdawgModule.set('awgModule/device', self.awg_name_IQ)
         
-#         self.hdawgModule.set('awgModule/index', 0)
+        self.hdawgModule.set('awgModule/index', 0)
         
-#         self.hdawgModule.set('awgModule/awg/enable', 0) # stop running sequencer
+        self.hdawgModule.set('awgModule/awg/enable', 0) # stop running sequencer
                         
     # QUBIT
     # ON/OFF methods
